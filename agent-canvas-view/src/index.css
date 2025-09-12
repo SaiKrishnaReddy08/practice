@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI Agent Portal Design System - Professional dark theme with tech aesthetics */
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 213 31% 91%;
+
+    --card: 224 44% 16%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 224 44% 16%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 213 31% 91%;
+
+    --muted: 215 28% 17%;
+    --muted-foreground: 218 11% 65%;
+
+    --accent: 194 100% 57%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 91% 71%;
+    --destructive-foreground: 222 47% 11%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 213 31% 91%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 11%;
+
+    --border: 215 28% 25%;
+    --input: 215 28% 25%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* AI Portal specific tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(194, 100%, 57%));
+    --gradient-secondary: linear-gradient(135deg, hsl(224, 44%, 16%), hsl(215, 28%, 17%));
+    --gradient-accent: linear-gradient(90deg, hsl(194, 100%, 57%), hsl(217, 91%, 60%));
+    
+    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
+    --shadow-card: 0 8px 32px hsl(222 47% 11% / 0.5);
+    
+    --agent-active: 142 76% 36%;     /* Green for normal/active state */
+    --agent-processing: 217 91% 60%; /* Blue for data consumption */
+    --agent-idle: 142 76% 36%;       /* Green for idle state */
+    --agent-error: 0 91% 71%;        /* Red for errors */
+    
+    --info: 194 100% 57%;           /* Cyan for informational messages */
+    --info-foreground: 222 47% 11%; /* Dark foreground for info */
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Consistent theme - no light mode needed for AI portal */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
